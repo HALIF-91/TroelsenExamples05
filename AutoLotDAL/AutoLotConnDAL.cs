@@ -177,5 +177,64 @@ namespace AutoLotConnectedLayer
             }
             return carPetName;
         }
+        public void ProcessCreditRisk(bool throwEx, int custID)
+        {
+            // Первым делом найти текущее имя по идентификатору клиента
+            string fName = string.Empty;
+            string lName = string.Empty;
+
+            SqlCommand cmdSelect = new SqlCommand(string.Format
+                ("Select * from Customers where CustID = {0}", custID), sqlCn);
+
+            using(SqlDataReader dr = cmdSelect.ExecuteReader())
+            {
+                if (dr.HasRows)
+                {
+                    dr.Read();
+                    fName = (string)dr["FirstName"];
+                    lName = (string)dr["LastName"];
+                }
+                else
+                    return;
+            }
+            // Создать объекты команд, которые представляют каждый шаг операции
+            SqlCommand cmdRemove = new SqlCommand(string.Format
+                ("Delete from Customers where CustID = {0}", custID), sqlCn);
+
+            SqlCommand cmdInsert = new SqlCommand(string.Format
+                ("Insert into CreditRisks " +
+                "(CustID, FirstName, LastName) Values " +
+                "({0}, '{1}', '{2}')", custID, fName, lName), sqlCn);
+
+            // Это будет получено из объекта подключения
+            SqlTransaction tx = null;
+            try
+            {
+                tx = sqlCn.BeginTransaction();
+
+                // включить команды в транзакцию
+                cmdInsert.Transaction = tx;
+                cmdRemove.Transaction = tx;
+
+                // выполнить команды
+                cmdInsert.ExecuteNonQuery();
+                cmdRemove.ExecuteNonQuery();
+
+                // имитировать ошибку
+                if (throwEx)
+                {
+                    throw new Exception("Sorry! Database error! Tx failed...");
+                }
+
+                // Зафиксировать транзакцию
+                tx.Commit();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                // Любая ошибка приведет к откату транзакции
+                tx.Rollback();
+            }
+        }
     }
 }
