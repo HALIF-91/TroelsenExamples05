@@ -5,3 +5,4 @@ C#5 .NET 4.5 Эндрю Троелсен
 3) Работа с объектами подключения, SqlConnectionStringBuilder, работа с объектами команд, с объектами чтения данных, получение нескольких результирующих наборов с использованием объекта чтения данных, проект - AutoLotDataReader, AutoLotDataReaderStrBuilder, AutoLotCUIClient;
 4) Понятие и тестирование транзакций базы данных, добваление метода транзакции в InventoryDAL, проект - AdoNetTransaction;
 5) Создание DataSet (DataTable, DataColumn, DataRow, RowState, DataRowVersion, DataTableReader), сериализация объектов DataSet и DataTable, проект - SimpleDataSet;
+6) Привязка объектов DataTable к графическим пользовательским интерфейсам Windows Forms (DataGridView), заполнение, удаление строк, обновление строк DataTable, выборка строк на основе критерия фильтрации, работа с типом DataView, проект - WindowsFormsDataBinding;
