@@ -4,3 +4,4 @@ C#5 .NET 4.5 Эндрю Троелсен
 2) Пример фабрики поставщиков данных, элемент <connectionStrings>, проект - DataProviderFactory;
 3) Работа с объектами подключения, SqlConnectionStringBuilder, работа с объектами команд, с объектами чтения данных, получение нескольких результирующих наборов с использованием объекта чтения данных, проект - AutoLotDataReader, AutoLotDataReaderStrBuilder, AutoLotCUIClient;
 4) Понятие и тестирование транзакций базы данных, добваление метода транзакции в InventoryDAL, проект - AdoNetTransaction;
+5) Создание DataSet (DataTable, DataColumn, DataRow, RowState, DataRowVersion, DataTableReader), сериализация объектов DataSet и DataTable, проект - SimpleDataSet;
