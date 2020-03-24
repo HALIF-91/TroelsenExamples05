@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleDataSet", "SimpleData
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsDataBinding", "WindowsFormsDataBinding\WindowsFormsDataBinding.csproj", "{1E266F3D-4B99-4FEB-9CBF-0AC7F55BED9A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FillDataSetUsingSqlDataAdapter", "FillDataSetUsingSqlDataAdapter\FillDataSetUsingSqlDataAdapter.csproj", "{45175956-0CED-4537-B4C3-013B808968D8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{1E266F3D-4B99-4FEB-9CBF-0AC7F55BED9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E266F3D-4B99-4FEB-9CBF-0AC7F55BED9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E266F3D-4B99-4FEB-9CBF-0AC7F55BED9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45175956-0CED-4537-B4C3-013B808968D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45175956-0CED-4537-B4C3-013B808968D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45175956-0CED-4537-B4C3-013B808968D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45175956-0CED-4537-B4C3-013B808968D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
