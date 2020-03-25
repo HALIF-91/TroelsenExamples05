@@ -31,6 +31,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultitabledDataSetApp", "Mu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGridViewDataDesigner", "DataGridViewDataDesigner\DataGridViewDataDesigner.csproj", "{697F015B-9AB3-4E6A-A483-640F875507D3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoLotDAL3", "AutoLotDAL (Version 3)\AutoLotDAL3.csproj", "{962752F9-4241-4EA3-92D0-E553E7752F88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StronglyTypedDataSetConsoleClient", "StronglyTypedDataSetConsoleClient\StronglyTypedDataSetConsoleClient.csproj", "{30663319-AFF3-4D9B-9C48-09438438589E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +97,14 @@ Global
 		{697F015B-9AB3-4E6A-A483-640F875507D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{697F015B-9AB3-4E6A-A483-640F875507D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{697F015B-9AB3-4E6A-A483-640F875507D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{962752F9-4241-4EA3-92D0-E553E7752F88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{962752F9-4241-4EA3-92D0-E553E7752F88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{962752F9-4241-4EA3-92D0-E553E7752F88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{962752F9-4241-4EA3-92D0-E553E7752F88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30663319-AFF3-4D9B-9C48-09438438589E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30663319-AFF3-4D9B-9C48-09438438589E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30663319-AFF3-4D9B-9C48-09438438589E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30663319-AFF3-4D9B-9C48-09438438589E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
